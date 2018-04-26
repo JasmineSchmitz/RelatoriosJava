@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="relatorio_autores" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="18624a6e-cca3-4840-9582-d42df92ced17">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="autor_id" class="java.lang.Integer"/>
+	<field name="nome" class="java.lang.String"/>
+	<field name="Field_1" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="0" y="30" width="557" height="30" backcolor="#00FF3C" uuid="f1fb3a05-73ef-4890-804e-445890a43c96"/>
+				<textElement textAlignment="Center">
+					<font fontName="Algerian" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relatório de Autores]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="140" height="20" uuid="65cf5d09-d9f2-4023-9480-7269101198ec">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9835b3cb-8d3e-48df-a932-2cae08629fc0"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Código do Autor]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="189" y="0" width="371" height="20" uuid="2753644a-dd37-4859-82a5-02efabc22ddd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c98c0f03-d766-4f26-813e-c29368422d11"/>
+				</reportElement>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Nome]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="45" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="140" height="30" uuid="a1241d39-fe53-4e27-ab0d-e948e4384276">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9835b3cb-8d3e-48df-a932-2cae08629fc0"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{autor_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="190" y="0" width="370" height="23" uuid="4c439a4e-1b3b-4084-bf00-dac5564cfdf8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c98c0f03-d766-4f26-813e-c29368422d11"/>
+				</reportElement>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="20" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="50" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>
